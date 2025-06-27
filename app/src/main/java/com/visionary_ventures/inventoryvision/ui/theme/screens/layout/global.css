@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%; /* Dark Blueish Gray for text on light bg */
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    --primary: 210 50% 60%; /* Muted Blue #6699CC */
+    --primary-foreground: 210 20% 98%; /* Very light text for on-primary */
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 222 47% 11%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 222 47% 25%;
+    --accent: 170 65% 50%; /* Teal #2DD4BF */
+    --accent-foreground: 170 100% 15%; /* Dark teal text for on-accent */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 210 50% 60%; /* Muted Blue for focus rings */
+    --radius: 1rem; /* For rounded-2xl effect on cards and other elements */
+
+    --chart-1: 210 50% 60%; /* Muted Blue - Kept for other potential charts */
+    --chart-2: 170 65% 50%; /* Teal - Kept for other potential charts */
+    --chart-3: 40 100% 73%; /* Gentle Yellow */
+    --chart-4: 280 65% 60%; /* A purple */
+    --chart-5: 340 75% 55%; /* A pink/red */
+
+    --chart-revenue-positive: 140 60% 45%; /* Green for Revenue */
+    --chart-expenses-negative: 0 70% 55%;   /* Red for Expenses */
+
+    --highlight-yellow: 40 100% 73%; /* Gentle Yellow #FFD373 */
+
+    /* Sidebar specific vars for light mode */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 222 47% 11%;
+    --sidebar-primary: 170 65% 50%; /* Teal for active/selected nav item */
+    --sidebar-primary-foreground: 170 100% 15%;
+    --sidebar-accent: 0 0% 96.1%; /* Hover background for nav items */
+    --sidebar-accent-foreground: 222 47% 11%;
+    --sidebar-border: 0 0% 89.8%;
+    --sidebar-ring: 170 65% 50%; /* Teal for focus within sidebar */
+  }
+
+  .dark {
+    --background: 222 47% 11%; /* Dark Blueish Gray */
+    --foreground: 210 40% 94%; /* Light Gray #F0F0F0 (approx HSL 0 0 94.1) */
+    --card: 222 47% 14%; /* Slightly Lighter Dark Blueish Gray */
+    --card-foreground: 210 40% 94%;
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 94%;
+    --primary: 210 50% 60%; /* Muted Blue #6699CC */
+    --primary-foreground: 210 20% 98%;
+    --secondary: 222 47% 18%;
+    --secondary-foreground: 210 40% 80%;
+    --muted: 222 47% 18%;
+    --muted-foreground: 210 40% 60%;
+    --accent: 170 65% 50%; /* Teal #2DD4BF */
+    --accent-foreground: 170 100% 15%;
+    --destructive: 0 63% 50%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 222 47% 20%;
+    --input: 222 47% 18%;
+    --ring: 210 50% 60%; /* Muted Blue for focus rings */
+
+    --chart-1: 210 50% 60%; /* Muted Blue */
+    --chart-2: 170 65% 50%; /* Teal */
+    --chart-3: 40 100% 73%; /* Gentle Yellow */
+    --chart-4: 280 65% 60%; /* A purple */
+    --chart-5: 340 75% 55%; /* A pink/red */
+
+    --chart-revenue-positive: 140 60% 50%; /* Green for Revenue (slightly brighter for dark) */
+    --chart-expenses-negative: 0 70% 60%;   /* Red for Expenses (slightly brighter for dark) */
+
+    --highlight-yellow: 40 100% 73%; /* Gentle Yellow #FFD373 */
+
+    /* Sidebar specific vars for dark mode */
+    --sidebar-background: 222 47% 9%; /* Slightly darker than main background */
+    --sidebar-foreground: 210 40% 85%; /* Readable text in sidebar */
+    --sidebar-primary: 170 65% 50%; /* Teal for active/selected nav item */
+    --sidebar-primary-foreground: 170 100% 15%;
+    --sidebar-accent: 222 47% 15%; /* Hover background for nav items */
+    --sidebar-accent-foreground: 210 40% 94%;
+    --sidebar-border: 222 47% 15%;
+    --sidebar-ring: 170 65% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-geist-sans), sans-serif;
+  }
+}
+
+/* Custom class for cards to apply rounded-2xl and soft shadows */
+.card-common {
+  @apply rounded-2xl shadow-lg bg-card text-card-foreground;
+}

@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+import type { LucideIcon } from "lucide-react";
+
+export interface Product {
+id: string;
+name: string;
+category: string;
+price: number;
+stock: number;
+imageUrl?: string;
+description?: string;
+dataAiHint?: string;
+}
+
+export interface Kpi {
+title: string;
+value: string;
+change?: string;
+changeType?: 'positive' | 'negative';
+icon?: string; // Corresponds to Lucide icon name, or use LucideIcon type directly
+}
+
+export interface ChartDataPoint {
+date: string;
+value: number;
+category?: string;
+}
+
+export interface UserProfile {
+name: string;
+email: string;
+// status?: string; // Removed status
+avatarUrl?: string;
+phone?: string;
+username?: string;
+bio?: string;
+preferences: {
+theme: 'light' | 'dark';
+language: string;
+notifications: Record<string, boolean>;
+};
+}
+
+export interface InventoryItem {
+id: string;
+name:string;
+stockLevel: number;
+reorderPoint?: number;
+optimalLevel?: number;
+status: 'Low Stock' | 'Overstock' | 'Healthy';
+}
+
+export interface ReportConfig {
+reportType: string;
+schedule: 'daily' | 'weekly' | 'monthly' | 'custom';
+deliveryOptions: Array<'email' | 'download' | 'dashboard'>;
+lastGenerated?: string;
+customCron?: string;
+}
+
+export interface PreferenceItem<TValue = string> {
+value: TValue;
+label: string;
+icon?: LucideIcon;
+}
+
+export interface NotificationSetting {
+id: string;
+label: string;
+icon?: LucideIcon;
+}
+
+export interface ConnectedService {
+id: string;
+name: string;
+description: string;
+connected: boolean;
+iconName?: string; // For dynamic icon loading or mapping
+}
+
+export interface SettingsItem {
+id: string;
+label: string;
+icon: LucideIcon;
+}
+
+export interface SettingsPageConfig {
+userName: string;
+userStatus: string;
+userAvatarUrl: string;
+userPhoneNumber: string;
+settingItems: SettingsItem[];
+}
+
+
+</body>
+</html>
