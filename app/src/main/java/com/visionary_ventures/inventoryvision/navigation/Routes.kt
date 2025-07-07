@@ -1,6 +1,9 @@
 package com.visionary_ventures.inventoryvision.navigation
 
 const val ROUTE_SPLASH="Splash"
+const val ROUTE_HOME="Home Page"
+const val ROUTE_LOGGIN="Loggin Page"
+const val ROUTE_REGISTER="Register Page"
 const val ROUTE_KPIPAGE="Kpi Page"
 const val ROUTE_KPICARD="Kpi Card"
 const val ROUTE_KPIOVERVIEW="Kpi Overview"

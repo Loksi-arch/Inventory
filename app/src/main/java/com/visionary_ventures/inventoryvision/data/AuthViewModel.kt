@@ -4,11 +4,11 @@ import android.content.Context
 import android.widget.Toast
 import androidx.navigation.NavHostController
 import com.visionary_ventures.inventoryvision.model.User
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.FirebaseDatabase
 import com.visionary_ventures.inventoryvision.navigation.ROUTE_HOME
 import com.visionary_ventures.inventoryvision.navigation.ROUTE_LOGGIN
 import com.visionary_ventures.inventoryvision.navigation.ROUTE_REGISTER
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.FirebaseDatabase
 
 class AuthViewModel (var navController: NavHostController, var context: Context) {
 

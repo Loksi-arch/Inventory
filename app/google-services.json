@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "595625410329",
+    "project_id": "inventory-vision-3x87z",
+    "storage_bucket": "inventory-vision-3x87z.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:595625410329:android:fd35099bad8b4293a40f88",
+        "android_client_info": {
+          "package_name": "com.visionary_ventures.inventoryvision"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "595625410329-gfll67re7fh1q3qtuile9ejhaj1sd2cb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMtbBDoV3XPFXSnYbkopeHRTnJdbJbsKw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "595625410329-gfll67re7fh1q3qtuile9ejhaj1sd2cb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

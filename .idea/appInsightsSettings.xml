@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.visionary_ventures.inventoryvision" />
+                  <option name="mobileSdkAppId" value="1:595625410329:android:fd35099bad8b4293a40f88" />
+                  <option name="projectId" value="inventory-vision-3x87z" />
+                  <option name="projectNumber" value="595625410329" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

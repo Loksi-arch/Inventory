@@ -8,15 +8,18 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.visionary_ventures.inventoryvision.ui.theme.screens.home.Home_Screen
 import com.visionary_ventures.inventoryvision.ui.theme.screens.kpi.KPICARD_Screen
 import com.visionary_ventures.inventoryvision.ui.theme.screens.kpi.KPIOVERVIEW_Screen
 import com.visionary_ventures.inventoryvision.ui.theme.screens.kpi.KPIPAGE_Screen
 import com.visionary_ventures.inventoryvision.ui.theme.screens.layout.LayoutPage_Screen
 import com.visionary_ventures.inventoryvision.ui.theme.screens.layout.Layout_Screen
+import com.visionary_ventures.inventoryvision.ui.theme.screens.loggin.Loggin_Screen
 import com.visionary_ventures.inventoryvision.ui.theme.screens.products.ProductForm_Screen
 import com.visionary_ventures.inventoryvision.ui.theme.screens.products.ProductPage_Screen
 import com.visionary_ventures.inventoryvision.ui.theme.screens.products.ProductTable_Screen
 import com.visionary_ventures.inventoryvision.ui.theme.screens.profile.ProfilePage_Screen
+import com.visionary_ventures.inventoryvision.ui.theme.screens.register.Register_Screen
 import com.visionary_ventures.inventoryvision.ui.theme.screens.settings.SettingsPage_Screen
 import com.visionary_ventures.inventoryvision.ui.theme.screens.splash.Splash_Screen
 import com.visionary_ventures.inventoryvision.ui.theme.screens.tools.InventoryTracker_Screen
@@ -37,6 +40,18 @@ fun App_Nav_Host(modifier: Modifier = Modifier,
 
         composable(ROUTE_SPLASH) {
             Splash_Screen(navController)
+        }
+
+        composable(ROUTE_HOME) {
+            Home_Screen(navController)
+        }
+
+        composable(ROUTE_LOGGIN) {
+            Loggin_Screen(navController)
+        }
+
+        composable(ROUTE_REGISTER) {
+            Register_Screen(navController)
         }
 
         composable(ROUTE_KPICARD) {
